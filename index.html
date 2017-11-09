@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax TeX Test Page</title>
+<!-- Copyright (c) 2010-2017 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css" /-->		
+<link rel="stylesheet" type="text/css" href="css/bookStyle.css">
+
+
+<style type="text/css">
+	@font-face {
+	    font-family: garamond;
+	    src: url('fonts/EBGaramond-Regular.ttf');
+		}
+
+
+</style>
+
+
+
+<script type="text/javascript" src="MathJax-master/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+  MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
+</script>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+</head>
+<body class="swipe">
+
+
+	<div style="text-align:center;">
+		<h1 style="margin-top:90px;"> Vector Calculus </h1>
+		<h3 style="margin-top:-5px;">An Interactive Guide</h3>
+
+
+		
+
+		<h3 style="margin-top:150px;"> Galib Hassan</h3>
+		<p style="font-size: .9em">Department of Physics </p>
+		<p style="font-size: .9em">
+			University of Cologne <br> 
+		</p>
+		<p style="margin-top:90px; border: 1px solid black; margin: 10px;" ></p>
+	</div>
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+	<script>
+	 	window.onload = function()
+	 	{
+	 		$('.swipe').on('swipeleft', handleSwipeLeft);
+	 		$('.swipe').on('swiperight', handleSwipeRight);
+	 		$('.swipe').on('tap', handleTap);
+	 		$('.swipe').on('taphold', handleTapHold);
+	 	}
+
+	 	function handleSwipeLeft(){
+			$(location).attr('href','pages/preface.html')
+	 	}
+
+	 	function handleSwipeRight(){
+	 		alert("swipe right");
+	 	}
+
+
+	 	function handleTap(){
+	 		alert("Tap");
+	 	}
+
+	 	function handleTapHold(){
+	 		alert("tap and hold");
+	 	}
+
+
+	 	// As submitted by @Aras
+		$.mobile.loading( "hide" );
+		// (or presumably as submitted by @Pnct)
+		$.mobile.loading().hide();
+
+	 </script>
+
+
+
+
+</body>
+</html>

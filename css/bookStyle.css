@@ -1,0 +1,12 @@
+
+	*{
+	margin: 0px;
+	}
+	*:focus{
+		outline: none;
+	}
+
+	body{
+		font-family: garamond;
+		color: #494A4C;
+	}
